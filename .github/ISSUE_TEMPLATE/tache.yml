@@ -1,0 +1,40 @@
+name: Nouvelle tâche
+description: Ajouter une tâche au Project « Compétitions »
+title: "[Tâche] "
+projects: ["Hackaton-hub/1"]
+body:
+  - type: markdown
+    attributes:
+      value: |
+        La compétition est celle de ce dépôt. Ses dates limites et règles propres sont dans le README du dépôt.
+  - type: input
+    id: livrable
+    attributes:
+      label: Livrable attendu
+      placeholder: "Ex. Tableau des résultats et recommandations"
+    validations:
+      required: true
+  - type: textarea
+    id: description
+    attributes:
+      label: Description
+      placeholder: "Ce qu'il faut faire, en quelques lignes"
+  - type: input
+    id: dependances
+    attributes:
+      label: Dépend de
+      placeholder: "Ex. #12 (laisser vide si aucune)"
+  - type: markdown
+    attributes:
+      value: |
+        Après création, dans le Project : renseignez **Compétition**, **Échéance**, **Livrable** et **Statut**,
+        puis assignez la personne responsable de la tâche.
+  - type: checkboxes
+    id: fin
+    attributes:
+      label: Avant de passer en « Terminé »
+      options:
+        - label: Livrable produit
+        - label: PR ouverte avec `Closes #numéro` et validation demandée à Bambara (si code)
+        - label: Rapport (1-2 pages) envoyé au responsable de la compétition
+        - label: Statut et champ Rapport mis à jour dans le Project
