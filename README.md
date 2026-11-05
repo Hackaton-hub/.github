@@ -5,7 +5,7 @@ de suivi**, le Project **[Compétitions](https://github.com/orgs/Hackaton-hub/pr
 **son propre dépôt**.
 
 > **À retenir** : ouvre **[Mes tâches](https://github.com/orgs/Hackaton-hub/projects/1/views/3)**, tiens ton **Statut** à jour, une PR par tâche avec
-> `Closes #numéro`, Bambara valide.
+> `Closes #numéro`, le **responsable de la compétition** valide.
 
 ---
 
@@ -20,11 +20,13 @@ de suivi**, le Project **[Compétitions](https://github.com/orgs/Hackaton-hub/pr
 | Ajouter une nouvelle compétition | [NOUVELLE_COMPETITION.md](NOUVELLE_COMPETITION.md) |
 | Les notifications (nouvelles tâches, PR, validations) | les salons Discord de chaque compétition |
 
-| Rôle | Personne |
+Chaque compétition a **un responsable** : il reçoit les rapports de fin de tâche **et valide les PR** de son dépôt.
+
+| Compétition | Responsable (rapports + validation des PR) |
 |---|---|
-| Responsable VerifAfrique | @BHAR-226 |
-| Responsable Kiro | @Windyam-Juste-Yannel-BELEMSIGRI |
-| Validation de toutes les PR | @BHAR-226 |
+| VerifAfrique | @BHAR-226 (Bambara) |
+| Kiro | @Windyam-Juste-Yannel-BELEMSIGRI (Yannel) |
+| Nouvelle compétition | la personne désignée au lancement (voir [NOUVELLE_COMPETITION.md](NOUVELLE_COMPETITION.md)) |
 
 ---
 
@@ -64,7 +66,7 @@ On modifie une case en cliquant dessus, comme dans un tableur.
 |---|---|
 | une issue est ajoutée au Project | elle passe en **À faire** |
 | une PR qui contient `Closes #12` est ouverte | la tâche 12 passe en **En cours** |
-| Bambara merge cette PR | l'issue 12 se ferme et la tâche passe en **Terminé** |
+| le responsable de la compétition merge cette PR | l'issue 12 se ferme et la tâche passe en **Terminé** |
 | tu mets une tâche en **Terminé** | son issue se ferme |
 | une issue est fermée | la tâche passe en **Terminé** |
 | une tâche a des sous-tâches | elles sont ajoutées au Project |
@@ -94,14 +96,16 @@ le formulaire **Nouvelle tâche** (§5) : elle arrive aussi dans le Project.
    git merge origin/main
    ```
 
-4. **J'ouvre une PR par tâche**, avec `Closes #numéro` et Bambara en relecteur :
+4. **J'ouvre une PR par tâche**, avec `Closes #numéro` et **le responsable de la compétition** en relecteur
+   (VerifAfrique → `BHAR-226`, Kiro → `Windyam-Juste-Yannel-BELEMSIGRI`) :
 
    ```bash
+   # exemple VerifAfrique
    gh pr create --base main --head ange --reviewer BHAR-226 --title "[V2] Scraper les données" --body "Closes #2"
    ```
 
    Ou sur GitHub : *Pull requests → New pull request*. Le modèle de PR se remplit tout seul : coche la checklist.
-5. **Je préviens Bambara** sur Discord. Il relit, puis valide et merge. **Je ne merge jamais moi-même.**
+5. **Je préviens le responsable** sur Discord. Il relit, puis valide et merge. **Je ne merge jamais moi-même.**
    La tâche passe alors en **Terminé** toute seule.
 6. **Si ce n'est pas du code** (étude, inscription, rapport…), je passe moi-même le Statut à **Terminé**
    quand le livrable est rendu.

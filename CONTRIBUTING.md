@@ -9,7 +9,8 @@ Toutes les tâches sont suivies dans le Project d'organisation **[Compétitions]
 | Rôle | Personne |
 |---|---|
 | Responsable d'une compétition | indiqué dans le README du dépôt de la compétition |
-| Validation des PR (toutes compétitions) | @BHAR-226 |
+| Validation des PR | **le responsable de la compétition** du dépôt |
+| Rapports de fin de tâche | **le responsable de la compétition** du dépôt |
 
 ## 1. Échéances
 
@@ -43,7 +44,8 @@ git checkout ange
 git fetch origin
 git merge origin/main
 
-# Ouvrir la PR de la tâche, avec Bambara en relecteur
+# Ouvrir la PR de la tâche, avec le responsable de la compétition en relecteur
+# (exemple VerifAfrique, dont le responsable est @BHAR-226)
 gh pr create --base main --head ange --reviewer BHAR-226 --title "[V2] Scraper les données" --body "Closes #12"
 ```
 
@@ -52,7 +54,8 @@ sur la tâche de code suivante**. Sinon, les deux tâches se mélangent dans la 
 
 ## 5. Validation des PR
 
-Quand votre PR est prête, demandez la relecture de @BHAR-226 (option `--reviewer` ou bouton *Reviewers*)
+Chaque PR est validée par **le responsable de la compétition** du dépôt (indiqué dans son README).
+Quand votre PR est prête, demandez-lui la relecture (option `--reviewer` ou bouton *Reviewers*)
 et prévenez-le sur Discord. Ne mergez pas sans sa validation.
 
 ## 6. Statut des tâches

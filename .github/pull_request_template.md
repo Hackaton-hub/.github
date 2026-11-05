@@ -14,6 +14,6 @@ Closes #<!-- numéro de l'issue, ex. 12 -->
 
 - [ ] Une seule tâche dans cette PR (règle 3)
 - [ ] Faite depuis ma branche personnelle (mon prénom), à jour avec `main` (règle 4)
-- [ ] @BHAR-226 demandé en relecteur et prévenu sur Discord (règle 5)
+- [ ] Responsable de la compétition demandé en relecteur et prévenu sur Discord (règle 5)
 - [ ] Rapport de 1-2 pages envoyé au responsable de la compétition (règle 2)
 - [ ] Statut et champ *Rapport* mis à jour dans le Project (règle 6)

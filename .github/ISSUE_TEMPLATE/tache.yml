@@ -35,6 +35,6 @@ body:
       label: Avant de passer en « Terminé »
       options:
         - label: Livrable produit
-        - label: PR ouverte avec `Closes #numéro` et validation demandée à Bambara (si code)
+        - label: PR ouverte avec `Closes #numéro` et validation demandée au responsable de la compétition (si code)
         - label: Rapport (1-2 pages) envoyé au responsable de la compétition
         - label: Statut et champ Rapport mis à jour dans le Project
